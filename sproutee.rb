@@ -5,21 +5,21 @@
 class Sproutee < Formula
   desc "A powerful CLI tool for efficient Git worktree management with automated file copying and multi-editor integration"
   homepage "https://github.com/daisuke310vvv/sproutee"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/daisuke310vvv/sproutee/releases/download/v0.3.1/sproutee_Darwin_x86_64.tar.gz"
-      sha256 "96d02af5e4a136030b3cddefafc55d659388977959c01e12d5eb35346197ca8f"
+      url "https://github.com/daisuke310vvv/sproutee/releases/download/v0.4.0/sproutee_Darwin_x86_64.tar.gz"
+      sha256 "aad6d6a53e191c5d7f36055856e0c739688fb62cd0365a47a7b39b45eda7b5ca"
 
       def install
         bin.install "sproutee"
       end
     end
     on_arm do
-      url "https://github.com/daisuke310vvv/sproutee/releases/download/v0.3.1/sproutee_Darwin_arm64.tar.gz"
-      sha256 "45950661a812a24a7519ca4baccd75ea032baa23984dcd3d13a7503bedf28b20"
+      url "https://github.com/daisuke310vvv/sproutee/releases/download/v0.4.0/sproutee_Darwin_arm64.tar.gz"
+      sha256 "782a203e424ae3e2dbb136323c5cef337ff937e25000253ef73b6bfe123fe6f5"
 
       def install
         bin.install "sproutee"
@@ -30,8 +30,8 @@ class Sproutee < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/daisuke310vvv/sproutee/releases/download/v0.3.1/sproutee_Linux_x86_64.tar.gz"
-        sha256 "07125db3d288e209c7c386ec23486374aa7e1774ea472d2fdf023e37e30615fa"
+        url "https://github.com/daisuke310vvv/sproutee/releases/download/v0.4.0/sproutee_Linux_x86_64.tar.gz"
+        sha256 "d270337f00c1166b9ae6116affa632de66da7e26092c527cc29a3901eaa8a172"
 
         def install
           bin.install "sproutee"
@@ -40,8 +40,8 @@ class Sproutee < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/daisuke310vvv/sproutee/releases/download/v0.3.1/sproutee_Linux_armv6.tar.gz"
-        sha256 "2b48c53b40617dc6817d3460982bae7b9edf415d5a48099d88b15c45c272cdf6"
+        url "https://github.com/daisuke310vvv/sproutee/releases/download/v0.4.0/sproutee_Linux_armv6.tar.gz"
+        sha256 "6e2b4d8281d8936d9a4667037fbd875d5e5f603a104e31bcd7520f9a3abee50b"
 
         def install
           bin.install "sproutee"
@@ -50,8 +50,8 @@ class Sproutee < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/daisuke310vvv/sproutee/releases/download/v0.3.1/sproutee_Linux_arm64.tar.gz"
-        sha256 "da09e94c68a2ea00ff23270886391d2c6b8ce2b78edcb111d8176d14c20764fb"
+        url "https://github.com/daisuke310vvv/sproutee/releases/download/v0.4.0/sproutee_Linux_arm64.tar.gz"
+        sha256 "fcdff9c8cae5d93b2d1fe89b363c68625698d8b716f82fa69068de626b5566ef"
 
         def install
           bin.install "sproutee"
